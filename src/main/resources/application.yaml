@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ai-demo
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: deepseek-r1:7b
+        options:
+          temperature: 0.8
+logging:
+  level:
+    org.springframework.ai: debug # AI对话的日志级别
+    com.itheima.ai: debug # 本项目的日志级别
